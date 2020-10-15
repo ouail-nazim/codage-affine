@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import com.sun.javafx.scene.control.DoubleField?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" >
+    <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+        <VBox spacing="10" >
+            <Label text="Chiffrement Affine:" alignment="center"/>
+            <HBox spacing="60">
+                <Label text="A:"/>
+                <TextField fx:id="A" />
+            </HBox>
+            <HBox  spacing="60">
+                <Label text="B:"/>
+                <TextField fx:id="B"/>
+            </HBox>
+            <HBox  spacing="10">
+                <Label text="Message:"/>
+                <TextArea prefWidth="400" prefHeight="200" fx:id="Message"/>
+            </HBox>
+            <HBox spacing="20" >
+                <Button fx:id="encryption_btn" text="encryption " onAction="#encryption"/>
+                <Button fx:id="decryption_btn" text="decryption " onAction="#decryption"/>
+            </HBox>
+            <HBox  spacing="10">
+                <Label text="Résultat:"/>
+                <TextArea prefWidth="400" prefHeight="200" fx:id="Resultat"/>
+            </HBox>
+        </VBox>
+</GridPane>
