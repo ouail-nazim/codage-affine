@@ -24,7 +24,7 @@ public class Controller {
             try {
                 a=Integer.parseInt(String.valueOf(A.getText()));
                 b=Integer.parseInt(String.valueOf(B.getText()));
-                if (this.prem26(a)== true){
+                if (this.prem26(a)== false){
                     before=Message.getText().toUpperCase();
                     after=this.encryptionMessage(before,a,b);
                     Resultat.setText(after);
@@ -45,7 +45,7 @@ public class Controller {
             try {
                 a=Integer.parseInt(String.valueOf(A.getText()));
                 b=Integer.parseInt(String.valueOf(B.getText()));
-                if (this.prem26(a)== true){
+                if (this.prem26(a)== false){
                     before=Message.getText().toUpperCase();
                     a=this.getFlag(a);
                     after=this.deccryptionMessage(before,a,b);
@@ -99,9 +99,9 @@ public class Controller {
     // check if a is premier avec 26
     public boolean prem26(Integer a){
         if (a%13 == 0 || a%2 == 0){
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
     // get l’inverse modulaire de a
     public int getFlag(Integer a){

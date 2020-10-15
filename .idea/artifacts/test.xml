@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="test">
+    <output-path>$PROJECT_DIR$/out/artifacts/test</output-path>
+    <root id="root">
+      <element id="archive" name="affine.jar">
+        <element id="module-output" name="affine" />
+        <element id="library" level="application" name="javafx-swt" />
+      </element>
+    </root>
+  </artifact>
+</component>
