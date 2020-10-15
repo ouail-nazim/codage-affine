@@ -25,6 +25,9 @@
             <HBox spacing="20" >
                 <Button fx:id="encryption_btn" text="encryption " onAction="#encryption"/>
                 <Button fx:id="decryption_btn" text="decryption " onAction="#decryption"/>
+                <Label fx:id="equ">
+                    <padding><Insets top="10" right="5" bottom="10" left="10"/></padding>
+                </Label>
             </HBox>
             <HBox  spacing="10">
                 <Label text="Résultat:"/>
